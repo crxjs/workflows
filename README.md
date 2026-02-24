@@ -8,7 +8,6 @@ A collection of reusable GitHub Actions workflows and actions for CRXJS projects
 ## Actions
 
 - [Setup JS](setup-js/action.yml): Setup Node.js and install dependencies
-- [Release](release/action.yml): Release a new version of the project
 
 ## Usage
 
@@ -25,7 +24,7 @@ on:
 
 jobs:
   release:
-    uses: crxjs/workflows/release.yml@v1
+    uses: crxjs/workflows/.github/workflows/release.yml@v1
     with:
       publish: true
     permissions:
